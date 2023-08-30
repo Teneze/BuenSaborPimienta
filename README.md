@@ -1,4 +1,15 @@
 # El Buen sabor
+<div> 
+    <p>
+        <img
+            src="logo.png"
+            alt="logochilepicante"
+            width="100px"
+            height="100px"
+        /> 
+     </p>
+</div>
+
 - Temática del sitio: Delivery de comida rápida.
 
 - Público Objetivo: Adolescentes y jóvenes.
@@ -8,7 +19,7 @@ El delivery de comidas de la ciudad “El Buen Sabor” ofrece a sus clientes un
 
 ## Integrantes del grupo
 
-- Ezequiel Tenerini
+- [Ezequiel Tenerini](https://github.com/Teneze)
 - Rodrigo Viluron
 - Emilio Amin
 - Tomás Colombo
