@@ -25,4 +25,4 @@ El delivery de comidas de la ciudad “El Buen Sabor” ofrece a sus clientes un
 - Tomás Colombo
 - Agustín García Yamin
 - Joaquín Prato
-- Andrés Novello
+- [Andrés Novello](https://github.com/andresnovello)
