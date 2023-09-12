@@ -1,0 +1,323 @@
+/* Importo fuente inter de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+header {
+    background-color: rgb(32, 32, 32);
+    color: #FCFFEB;
+    padding: 14px 12px;
+    font-family: 'Inter', sans-serif;
+    
+    /* Header fijo */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+header a {
+    color: #FCFFEB;
+}
+
+
+
+/* Logo con imagen */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FCFFEB;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+/* Navegación y botones */
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 36px;
+}
+
+.navigation a{
+    font-size: 16;
+    color: #FCFFEB;
+    text-decoration: none;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+}
+
+.navigation ul li a:hover {
+    color: #F34234;
+
+}
+
+.botones-nav button {
+    background-color: #F34234;
+    font-weight: 700;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50px;
+    padding: 8px 24px;
+    margin-left: 10px;
+    box-shadow: 0px 1px 2px #FCFFEB; /* Sombra del botón*/
+    vertical-align: middle;
+    cursor: pointer;
+    
+}
+
+.botones-nav button:active {
+    background-color: #FF8E85;
+    color: #ffffff;
+}
+
+/* Body */
+body {
+    background-color: #21262A;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    /* font-size: medium; */
+    line-height: normal;
+    margin: 0;
+}
+
+/* Main */
+main {
+    padding-top: 20px;
+}
+
+.container-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 64px 64px;
+    /* padding-top: 8rem; */
+    /* padding-bottom: 8rem; */
+    background-image: url(Imagenes/Fondo\ hamburguesa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    margin-top: 32px;
+    font-size: 32px;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Alinea arriba */
+    height: 100vh; /* Ajusta la altura del contenedor al 100% de la ventana */
+    margin-bottom: 20px;
+}
+
+/* Tamaño imágenes menu */
+.container-menu img {
+    width: 150px;
+    height: 150px;
+    border-radius: 24px;
+}
+
+
+.menu {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.menu-tipos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva fila cuando no quepan en el ancho */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: flex-start; /* Alinea arriba */
+}
+
+.hamburguesa1,
+.hamburguesa2,
+.hamburguesa3,
+.hamburguesa4,
+.hamburguesa5,
+.hamburguesa6,
+.hamburguesa7,
+.hamburguesa8 {
+    background-color:#DAD8D3;
+    width: calc(25% - 90px); /* Ancho del 25% del contenedor con un margen entre elementos */
+    margin: 8px; /* Espacio entre elementos */
+    text-align: center; /* Centra el contenido horizontalmente */
+
+    padding: 2px; /* Espaciado interno para el contenido */
+    border: 4px solid #000000; /* Borde blanco de 2 píxeles */
+    border-radius: 24px; /* Radio de borde para hacerlo redondeado */
+    height: 300px; /* Altura máxima del recuadro */
+    font-size: 16px;
+    
+}
+
+.hamburguesa1 button,
+.hamburguesa2 button,
+.hamburguesa3 button,
+.hamburguesa4 button,
+.hamburguesa5 button,
+.hamburguesa6 button,
+.hamburguesa7 button,
+.hamburguesa8 button {
+    background: #F34234;
+    color: #000000;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0px 1px 2px #000000; /* Sombra del botón*/
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 10px 12px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px; /* Separación entre los botones */
+}
+
+.hamburguesa1 button:active,
+.hamburguesa2 button:active,
+.hamburguesa3 button:active,
+.hamburguesa4 button:active,
+.hamburguesa5 button:active,
+.hamburguesa6 button:active,
+.hamburguesa7 button:active,
+.hamburguesa8 button:active {
+    background-color: #FF8E85;
+    color: #ffffff;
+}
+
+.menu h1 {
+    font-family: 'Inter', sans-serif;
+    margin-left: 50px;
+}
+
+main h1 {
+    color: #FCFFEB;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    padding: 16px 64px;
+    margin-top: 150px;
+    
+}
+
+footer p {
+    font-size: 14;
+    color: #9795B5;
+
+}
+
+/* Estilo de botones redes sociales */
+.container-socialmedia button {
+    background: linear-gradient(to bottom, #FD9601, #F34234); /*Efecto gradiente de colores*/
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 8px 8px;
+}
+
+.container-socialmedia button:hover{
+    /* Efecto en hover */
+    transform: translateY(-3px) scale(1.05);
+}
+
+.container-socialmedia svg {
+    /* Tamaño iconos svg */
+    width: 16px;
+    height: 16px;
+}
+
+/* Responsive */
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 800px) {
+    .container-titulo {
+        padding: 4rem 0; /* Ajusta el espacio superior para pantallas pequeñas */
+    }
+    
+    .container-menu {
+        margin-bottom: 20px; /* Ajusta el margen inferior para pantallas pequeñas */
+    }
+    
+    .hamburguesa1,
+    .hamburguesa2,
+    .hamburguesa3,
+    .hamburguesa4,
+    .hamburguesa5,
+    .hamburguesa6,
+    .hamburguesa7,
+    .hamburguesa8 {
+        width: 100%; /* Cambia el ancho de los elementos para pantallas pequeñas */
+        margin: 10px 0; /* Ajusta el espacio entre elementos para pantallas pequeñas */
+        height: auto; /* Ajusta la altura automática para pantallas pequeñas */
+    }
+
+    .hamburguesa1 p,
+    .hamburguesa2 p,
+    .hamburguesa3 p,
+    .hamburguesa4 p,
+    .hamburguesa5 p,
+    .hamburguesa6 p,
+    .hamburguesa7 p,
+    .hamburguesa8 p {
+        font-size: 10px; /* Ajusta el tamaño de fuente de los párrafos para pantallas pequeñas */
+    }
+
+    main {
+        margin-bottom: 50px; /* Agrega espacio en la parte inferior de main */
+      }
+    
+      footer {
+        margin-top: 1200px; /* Agrega espacio en la parte superior del footer */
+      }
+
+}
+
+/* Para pantallas entre 1048px y 800px */
+@media (max-width: 1048px) and (min-width: 800px) {
+    .hamburguesa1 p,
+    .hamburguesa2 p,
+    .hamburguesa3 p,
+    .hamburguesa4 p,
+    .hamburguesa5 p,
+    .hamburguesa6 p,
+    .hamburguesa7 p,
+    .hamburguesa8 p {
+      overflow-y: auto; /* Habilita el desplazamiento vertical si es necesario */
+      max-height: 120px; /* Altura máxima para el recuadro */
+      font-size: 10px; /* Tamaño de fuente ajustado para encajar en el recuadro */
+    }
+
+    footer {
+        margin-top: 5px; /* Agrega espacio en la parte superior del footer */
+      }
+  }
+  
