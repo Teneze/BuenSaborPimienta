@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota de Crédito</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 20px;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .table th, .table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .total-row {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>El Buen Sabor S.A.</h1>
+            <p>Domicilio: [Domicilio de la empresa]</p>
+        </div>
+
+        <div class="section">
+            <h2>Nota de Crédito</h2>
+            <p>Código: [Código de la nota]</p>
+            <p>Fecha: [Fecha de la nota]</p>
+        </div>
+
+        <div class="section">
+            <h2>Datos de Usuario</h2>
+            <p>Nombre de Usuario: [Nombre del usuario]</p>
+            <p>Domicilio de Entrega: [Domicilio de entrega]</p>
+        </div>
+
+        <div class="section">
+            <h2>Detalles</h2>
+            <table class="table">
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Subtotal</th>
+                </tr>
+                <!-- Repite las siguientes filas para cada producto -->
+                <tr>
+                    <td>[Nombre del producto]</td>
+                    <td>[Cantidad]</td>
+                    <td>[Precio unitario]</td>
+                    <td>[Subtotal]</td>
+                </tr>
+                <!-- Fin de las filas de productos -->
+                <tr class="total-row">
+                    <td colspan="3">Descuento en Porcentaje:</td>
+                    <td>[Descuento]</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="3">Total:</td>
+                    <td>[Total]</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
