@@ -28,5 +28,5 @@ Creado con [Figma](https://www.figma.com/file/R2utHd19tgI1UhXmW5YprR/Pimienta-Pa
 - Emilio Amin
 - Tomás Colombo
 - [Agustín García Yamin](https://github.com/agusgarcia18)
-- Joaquín Prato
+- [Joaquín Prato](https://github.com/joaPrato)
 - [Andrés Novello](https://github.com/andresnovello)
