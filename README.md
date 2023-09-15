@@ -24,8 +24,8 @@ Creado con [Figma](https://www.figma.com/file/R2utHd19tgI1UhXmW5YprR/Pimienta-Pa
 ## Integrantes del grupo
 
 - [Ezequiel Tenerini](https://github.com/Teneze)
-- Rodrigo Viluron
-- Emilio Amin
+- [Rodrigo Viluron](https://github.com/RodriViluron)
+- [Emilio Amin](https://github.com/EmiAmin13)
 - Tomás Colombo
 - [Agustín García Yamin](https://github.com/agusgarcia18)
 - [Joaquín Prato](https://github.com/joaPrato)
