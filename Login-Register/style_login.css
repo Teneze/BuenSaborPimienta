@@ -95,6 +95,97 @@ body{
     transform: scale(1.05);
 }
 
+.header .Menu-De-Opciones{
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
+    list-style: none;
+    padding: 0 10px;
+    color: var(--color-primario);
+}
+
+.header .Menu-De-Opciones li{
+    display: inline-block;
+    position: relative;
+    transition: 0.15s ;
+    z-index: 1000;
+    
+}
+
+.header .Menu-De-Opciones li:hover{
+    transform: scale(1.05);
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario{
+    display: flex;
+    align-items: center;
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario a{
+    color: var(--color-primario);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: 0.15s ;
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario a:hover{
+    color: pink;
+    transform: scale(1.05);
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario img{
+    width: 40px;
+    height: 40px;
+
+}
+
+.header .Menu-De-Opciones .Hijos{
+    height: auto;
+    border-radius: 24px;
+    padding: 20px 10px;
+}
+
+.header .Menu-De-Opciones .Hijos a{
+    color: var(--letra-oscuro);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 12px 20px;
+    transition: 0.15s ;
+    border-radius: 1000px;
+}
+
+.header .Menu-De-Opciones .Hijos a:hover{
+    background-color: pink;
+    transform: scale(0.9);
+}
+
+.header .Menu-De-Opciones li:hover .Hijos{
+    display: block;
+}
+
+.header .Menu-De-Opciones .Submenu .Hijos{
+    display: none;
+    background: var(--color-primario);
+    position: absolute;
+    width: 100%;
+}
+
+.header .Menu-De-Opciones .Submenu .Hijos li{
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.header .Menu-De-Opciones .Submenu .Hijos li a{
+    display: block;
+}
+
 @media (max-width: 1090px){
     .header .Titulo{
         font-size: 0;
@@ -350,3 +441,186 @@ main{
         position: relative;
     }
 }
+
+main {
+    padding-top: 20px;
+}
+
+.container-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 64px 64px;
+    /* padding-top: 8rem; */
+    /* padding-bottom: 8rem; */
+    background-image: url(Imagenes/Fondo\ hamburguesa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 32px;
+    font-size: 32px;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Alinea arriba */
+    height: 100vh; /* Ajusta la altura del contenedor al 100% de la ventana */
+    margin-bottom: 20px;
+}
+
+/* Tamaño imágenes menu */
+.container-menu img {
+    width: 150px;
+    height: 150px;
+    border-radius: 24px;
+}
+
+
+.menu {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.menu-tipos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva fila cuando no quepan en el ancho */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: flex-start; /* Alinea arriba */
+}
+
+.hamburguesa {
+    background-color:#DAD8D3;
+    width: calc(25% - 90px); /* Ancho del 25% del contenedor con un margen entre elementos */
+    margin: 8px; /* Espacio entre elementos */
+    text-align: center; /* Centra el contenido horizontalmente */
+
+    padding: 2px; /* Espaciado interno para el contenido */
+    border: 4px solid #000000; /* Borde blanco de 2 píxeles */
+    border-radius: 24px; /* Radio de borde para hacerlo redondeado */
+    height: 300px; /* Altura máxima del recuadro */
+    font-size: 16px;
+    
+}
+
+
+.hamburguesa button {
+    background: var(--color-primario);
+    color: #000000;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0px 1px 2px #000000; /* Sombra del botón*/
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 10px 12px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px; /* Separación entre los botones */
+}
+
+
+.hamburguesa button:active {
+    background-color: #FF8E85;
+    color: #ffffff;
+}
+
+.menu h1 {
+    font-family: 'Inter', sans-serif;
+    margin-left: 50px;
+}
+
+main h1 {
+    color: #FCFFEB;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    padding: 16px 64px;
+    margin-top: 150px;
+    
+}
+
+footer p {
+    font-size: 14;
+    color: #9795B5;
+
+}
+
+/* Estilo de botones redes sociales */
+.container-socialmedia button {
+    background: linear-gradient(to bottom, #FD9601, #F34234); /*Efecto gradiente de colores*/
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 8px 8px;
+}
+
+.container-socialmedia button:hover{
+    /* Efecto en hover */
+    transform: translateY(-3px) scale(1.05);
+}
+
+.container-socialmedia svg {
+    /* Tamaño iconos svg */
+    width: 16px;
+    height: 16px;
+}
+
+/* Responsive */
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 800px) {
+    .container-titulo {
+        padding: 4rem 0; /* Ajusta el espacio superior para pantallas pequeñas */
+    }
+    
+    .container-menu {
+        margin-bottom: 20px; /* Ajusta el margen inferior para pantallas pequeñas */
+    }
+    
+
+    .hamburguesa {
+        width: 100%; /* Cambia el ancho de los elementos para pantallas pequeñas */
+        margin: 10px 0; /* Ajusta el espacio entre elementos para pantallas pequeñas */
+        height: auto; /* Ajusta la altura automática para pantallas pequeñas */
+    }
+
+    .hamburguesa p {
+        font-size: 10px; /* Ajusta el tamaño de fuente de los párrafos para pantallas pequeñas */
+    }
+
+    main {
+        margin-bottom: 50px; /* Agrega espacio en la parte inferior de main */
+      }
+    
+      footer {
+        margin-top: 1200px; /* Agrega espacio en la parte superior del footer */
+      }
+
+}
+
+/* Para pantallas entre 1048px y 800px */
+@media (max-width: 1048px) and (min-width: 800px) {
+
+    .hamburguesa p {
+      overflow-y: auto; /* Habilita el desplazamiento vertical si es necesario */
+      max-height: 120px; /* Altura máxima para el recuadro */
+      font-size: 10px; /* Tamaño de fuente ajustado para encajar en el recuadro */
+    }
+
+    footer {
+        margin-top: 5px; /* Agrega espacio en la parte superior del footer */
+      }
+  }
