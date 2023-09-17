@@ -1,0 +1,442 @@
+:root {
+    --color-primario: rgba(243, 66, 52, 1);
+    /* Color para los botones y es igual al rojo del logo */
+    --color-secundario: #181E21;
+    --color-terciario: #DAD8D3;
+    --letra-oscuro: rgb(20, 17, 13);
+    --letra-clara: rgb(255, 247, 247);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #21262A;
+}
+
+.header {
+    background-image: url(Fondo\ hamburguesa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    padding: 5px 5%;
+
+}
+
+.header .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--letra-clara);
+    cursor: pointer;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+header .tipo-empleado {
+    color: var(--letra-clara);
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+header .mi-perfil-button {
+    background-color: var(--color-terciario);
+    border: none;
+    color: var(--letra-oscuro);
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    padding: 0;
+}
+
+header .mi-perfil-button:hover {
+    color: var(--color-primario);
+}
+
+.navegacion-bar {
+    background-color: #21262A;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion-bar .boton-navegacion {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    color: var(--letra-clara);
+    cursor: pointer;
+    font-size: 24px;
+    outline: none;
+}
+
+.navegacion-bar .boton-navegacion:hover {
+    color: var(--color-primario);
+}
+
+.opciones {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.boton-navegacion:hover .opciones {
+    display: flex;
+}
+
+.opciones .opcion {
+    padding: 10px 20px;
+    color: var(--letra-oscuro);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.opciones .opcion:hover {
+    background-color: var(--color-primario);
+    color: var(--letra-clara);
+}
+
+.perfil-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    margin: -150px auto;
+    /* Ajusta este valor para reducir el espacio superior */
+    padding: 24px;
+    gap: 12px;
+}
+
+.datos-personales {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.datos-personales h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--color-primario);
+    width: 100%;
+    text-decoration: underline;
+}
+
+.datos-personales input {
+    width: calc(50% - 10px);
+    /* Divide los campos en dos columnas con 10px de espacio entre ellos */
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #cfcfcf;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.datos-personales button {
+
+    background-color: var(--color-primario);
+    color: var(--letra-oscuro);
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.datos-personales button:hover {
+    background-color: pink;
+}
+
+
+
+.header .logo img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.header .logo:hover {
+    transform: scale(1.1);
+
+}
+
+
+@media (max-width: 1090px) {
+    .header .Titulo {
+        font-size: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .header .nav-links li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 626px) {
+    .header .botones button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 700;
+        color: black;
+        padding: 8px 24px;
+        margin: 4px;
+        background-color: var(--color-primario);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        transform: scale(0.7);
+    }
+
+    .header .botones button:hover {
+        background-color: pink;
+        transform: scale(0.75);
+    }
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 38, 43, 1);
+
+}
+
+.caja__trasera div {
+    margin: 100px 40px;
+    color: var(--letra-clara);
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button {
+    margin-top: 30px;
+}
+
+.caja__trasera div h3 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button {
+    padding: 10px 40px;
+    border: 2px solid var(--letra-clara);
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--letra-clara);
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover {
+    background: var(--color-primario);
+    color: var(--letra-oscuro);
+
+}
+
+/*Formularios*/
+
+.contenedor__login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 80px 20px;
+    background: rgb(32, 32, 32);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--letra-clara);
+}
+
+.contenedor__login-register form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #cfcfcf;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.contenedor__login-register form input:hover {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    transform: scale(1.05);
+}
+
+.contenedor__login-register .IniciarGoogle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    color: var(--letra-oscuro);
+    transition: all 0.3s;
+}
+
+.contenedor__login-register .IniciarGoogle img {
+    margin-right: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+.contenedor__login-register .IniciarGoogle:hover {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    color: var(--letra-oscuro);
+    transform: scale(1.05);
+}
+
+.contenedor__login-register form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: var(--color-primario);
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--letra-oscuro);
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.contenedor__login-register form button:hover {
+    background: var(--color-primario);
+    color: var(--letra-clara);
+    transform: scale(1.1);
+}
+
+.formulario__login {
+    opacity: 1;
+    display: block;
+}
+
+.formulario__register {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+    main {
+        margin-top: 50px;
+    }
+
+    .caja__trasera {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div {
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register {
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form {
+        position: relative;
+    }
+}
