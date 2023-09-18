@@ -1,0 +1,271 @@
+:root{
+    --color-primario: rgba(243, 66, 52, 1); /* Color para los botones y es igual al rojo del logo */
+    --letra-oscuro: rgb(20, 17, 13);
+    --letra-clara: rgb(255, 247, 247);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(Fondo_Hamburguesa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.header {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    padding: 5px 5%;
+    
+}
+
+.header .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--letra-clara);
+    cursor: pointer;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+.header .logo img {
+    width: 70px;
+    height: 70px;
+    
+}
+
+.header .logo:hover{
+    transform: scale(1.1);
+    
+}
+
+.header .nav-links {
+    list-style: none;
+    margin: 4px;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: 0.2s;
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: var(--letra-clara);
+    text-decoration: none;
+
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.header .nav-links a:hover{
+     color: var(--color-primario);  
+}
+
+.header .botones button{
+    font-weight: 700;
+    color: black;
+    padding: 8px 24px;
+    margin: 4px;
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .botones button:hover{
+    background-color: pink;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1090px){
+    .header .Titulo{
+        font-size: 0;
+    }
+}
+
+@media (max-width: 950px){
+        .header .nav-links li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 626px){
+    .header .botones button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 700;
+        color: black;
+        padding: 8px 24px;
+        margin: 4px;
+        background-color: var(--color-primario);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        transform: scale(0.7);
+    }
+
+    .header .botones button:hover{
+        background-color: pink;
+        transform: scale(0.75);
+    }
+}
+
+/*Formulario de datos personales*/
+.contenedor_datos_personales {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(32, 32, 32);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor_datos_personales h2{
+    color: var(--letra-clara);
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.formulario_datos_personles{
+    display:flex;
+    justify-content: space-between;
+}
+
+.columna_datos_personales{
+  
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.columna_datos_personales *{
+    display: block;
+    margin: 5px;
+}
+
+
+.columna_datos_personales label{
+    color: var(--letra-clara);
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+.columna_datos_personales .botones button{
+    scale: 1.2;
+    font-weight: 700;
+    color: black;
+    padding: 8px 24px;
+    margin: 4px;
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.columna_datos_personales  .botones button:hover{
+    background-color: pink;
+    transform: scale(1.05);
+}
+.columna_datos_personales .botones {
+    margin-top: 30px;
+}
+
+.columna_datos_personales input{
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    border: none;
+    background: #cfcfcf;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+    margin-bottom: 20px ;
+}
+
+.columna_datos_personales input:hover{
+    width: 100%;
+    border: none;
+    background: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    
+}
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    padding: 16px 64px;
+    margin-top:  80vh;
+    
+    
+}
+
+footer p {
+    font-size: 14;
+    color: #9795B5;
+
+}
+
+/* Estilo de botones redes sociales */
+.container-socialmedia button {
+    background: linear-gradient(to bottom, #FD9601, #F34234); /*Efecto gradiente de colores*/
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 8px 8px;
+}
+
+.container-socialmedia button:hover{
+    /* Efecto en hover */
+    transform: translateY(-3px) scale(1.05);
+}
+
+.container-socialmedia svg {
+    /* Tamaño iconos svg */
+    width: 16px;
+    height: 16px;
+}
+
+
+

@@ -1,0 +1,317 @@
+:root{
+    --color-primario: rgba(243, 66, 52, 1); /* Color para los botones y es igual al rojo del logo */
+    --letra-oscuro: rgb(20, 17, 13);
+    --letra-clara: rgb(255, 247, 247);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.header {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    padding: 5px 5%;
+    
+}
+
+.header .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--letra-clara);
+    cursor: pointer;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+.header .logo img {
+    width: 70px;
+    height: 70px;
+    
+}
+
+.header .logo:hover{
+    transform: scale(1.1);
+    
+}
+
+.header .nav-links {
+    list-style: none;
+    margin: 4px;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: 0.2s;
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: var(--letra-clara);
+    text-decoration: none;
+
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.header .nav-links a:hover{
+     color: var(--color-primario);  
+}
+
+.header .botones button{
+    font-weight: 700;
+    color: black;
+    padding: 8px 24px;
+    margin: 4px;
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .botones button:hover{
+    background-color: pink;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1090px){
+    .header .Titulo{
+        font-size: 0;
+    }
+}
+
+@media (max-width: 950px){
+        .header .nav-links li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 626px){
+    .header .botones button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 700;
+        color: black;
+        padding: 8px 24px;
+        margin: 4px;
+        background-color: var(--color-primario);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        transform: scale(0.7);
+    }
+
+    .header .botones button:hover{
+        background-color: pink;
+        transform: scale(0.75);
+    }
+}
+
+/*Encabezado */
+
+.contenedor_encabezado{
+    margin: 18px;
+    color: var(--letra-clara);
+    display: flex;
+    
+}
+
+.nombre_encabezado{
+    font-size: 35px;
+    position: absolute;
+    left: 38%;
+    margin-top: 15px;
+}
+ .contenedor_encabezado .estado{
+    display: flex;
+    font-size: 20px;
+    padding-right: 8px;
+ }
+
+ .contenedor_encabezado .estado p{
+    margin-right: 8px;
+    padding: 4px 8px;
+ }
+
+ .contenedor_encabezado .estado .estado_actual{
+    background-color: var(--color-primario);
+    padding: 4px 8px;
+    border-radius: 20px;
+ }
+
+/*Tabla de peidos*/
+
+.contenedor_pedios_usuario{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(75, 6, 30);
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.tabla_pedidos{
+    padding: 30px 0px;
+    border:4px solid black;
+    background-color: #ccc;
+    border-collapse: collapse;
+    
+}
+
+.columna_head{
+    font-size: 20px;
+    background-color: #000000;
+
+}
+
+.columna_head td{
+    border:2px solid black;
+    padding: 8px;
+    color: var(--letra-clara);
+    text-align: center;
+}
+
+.columna_cuerpo td{
+    border:2px solid black;
+    padding: 8px;
+    color: var(--letra-oscuro);
+    text-align: center;
+}
+
+.columna_cuerpo:hover{
+    scale: 1.01;
+    
+}
+
+.columna_cuerpo button{
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 4px 6px;
+    margin: 0px 4px;
+    
+}
+
+.columna_cuerpo button:hover{
+    transform: scale(1.05);
+    background-color: azure;
+}
+
+
+.columna_cuerpo .boton_detalle{
+    background-color: rgb(240, 240, 10);
+
+}
+
+.columna_cuerpo .boton_factura{
+    background-color: rgb(228, 154, 16);
+
+}
+
+.columna_cuerpo .boton_entregar{
+    background-color: rgb(36, 122, 168);
+
+}
+
+
+
+.contenedor_pedios_usuario .botones button{
+    scale: 1.2;
+    font-weight: 700;
+    color: black;
+    padding: 8px 24px;
+    margin: 4px 20px;
+    
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contenedor_pedios_usuario  .botones button:hover{
+    background-color: pink;
+    transform: scale(1.05);
+}
+.contenedor_pedios_usuario .botones {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    padding: 16px 64px;
+    margin-top:  80vh;
+    
+    
+}
+
+footer p {
+    font-size: 14;
+    color: #9795B5;
+
+}
+
+/* Estilo de botones redes sociales */
+.container-socialmedia button {
+    background: linear-gradient(to bottom, #FD9601, #F34234); /*Efecto gradiente de colores*/
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 8px 8px;
+}
+
+.container-socialmedia button:hover{
+    /* Efecto en hover */
+    transform: translateY(-3px) scale(1.05);
+}
+
+.container-socialmedia svg {
+    /* Tamaño iconos svg */
+    width: 16px;
+    height: 16px;
+}
