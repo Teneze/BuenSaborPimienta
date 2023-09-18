@@ -1,0 +1,489 @@
+:root {
+    --color-primario: rgba(243, 66, 52, 1);
+    /* Color para los botones y es igual al rojo del logo */
+    --color-secundario: #181E21;
+    --color-terciario: #DAD8D3;
+    --letra-oscuro: rgb(20, 17, 13);
+    --letra-clara: rgb(255, 247, 247);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #21262A;
+}
+
+.header {
+    background-image: url(Fondo\ hamburguesa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    padding: 5px 5%;
+
+}
+
+.header .logo img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.header .logo:hover {
+    transform: scale(1.1);
+
+}
+
+.header .logo {
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--letra-clara);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+header .tipo-empleado {
+    margin-right: 20px;
+    color: var(--letra-clara);
+    font-size: 24px;
+}
+
+header .mi-perfil-button {
+    padding: 0;
+    background-color: var(--color-terciario);
+    border: none;
+    color: var(--letra-oscuro);
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+
+}
+
+header .mi-perfil-button:hover {
+    color: var(--color-primario);
+}
+
+.navegacion-bar {
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion-bar .boton-navegacion {
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    color: var(--letra-clara);
+    cursor: pointer;
+    font-size: 24px;
+    outline: none;
+}
+
+.navegacion-bar .boton-navegacion:hover {
+    color: var(--color-primario);
+}
+
+.opciones {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 5px;
+
+}
+
+.boton-navegacion:hover .opciones {
+    display: flex;
+}
+
+.opciones .opcion {
+    padding: 10px 20px;
+    color: var(--letra-oscuro);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.opciones .opcion:hover {
+    background-color: var(--color-primario);
+    color: var(--letra-clara);
+}
+
+.header .Menu-De-Opciones {
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
+    list-style: none;
+    padding: 0 10px;
+    color: var(--color-terciario);
+}
+
+.header .Menu-De-Opciones li {
+    display: inline-block;
+    position: relative;
+    transition: 0.15s;
+    z-index: 1000;
+
+}
+
+.header .Menu-De-Opciones li:hover {
+    transform: scale(1.05);
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario {
+    display: flex;
+    align-items: center;
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario a {
+    color: var(--color-terciario);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: 0.15s;
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario a:hover {
+    color: pink;
+    transform: scale(1.05);
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario img {
+    width: 40px;
+    height: 40px;
+
+}
+
+.header .Menu-De-Opciones .Hijos {
+    height: auto;
+    border-radius: 24px;
+    padding: 20px 10px;
+}
+
+.header .Menu-De-Opciones .Hijos a {
+    color: var(--letra-oscuro);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 12px 20px;
+    transition: 0.15s;
+    border-radius: 1000px;
+}
+
+.header .Menu-De-Opciones .Hijos a:hover {
+    background-color: pink;
+    transform: scale(0.9);
+}
+
+.header .Menu-De-Opciones li:hover .Hijos {
+    display: block;
+}
+
+.header .Menu-De-Opciones .Submenu .Hijos {
+    display: none;
+    background: var(--color-terciario);
+    position: absolute;
+    width: 100%;
+}
+
+.header .Menu-De-Opciones .Submenu .Hijos li {
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.header .Menu-De-Opciones .Submenu .Hijos li a {
+    display: block;
+}
+
+
+/*main*/
+
+main {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.contenedor-main {
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px;
+    margin: 24px;
+    border-radius: 16px;
+    gap: 8px;
+}
+
+.contenedor-titulo {
+    display: flex;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: var(--letra-clara);
+    border-bottom: 2px solid var(--color-terciario);
+}
+/*contenedor para botones*/
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+
+.contenedor-botones-botonNuevo {
+    background-color: var(--color-primario);
+    color: var(--letra-oscuro);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/*boton search*/
+.contenedor-buscar {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.contenedor-input-buscar {
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+}
+
+.boton-lupa,
+.boton-cancelar {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.boton-lupa i,
+.boton-cancelar i {
+    color: var(--color-primario);
+}
+
+.boton-lupa:hover i,
+.boton-cancelar:hover i {
+    color: var(--color-secundario);
+}
+
+/*tabla*/
+table {
+    width: 70%;
+    background-color: var(--color-terciario);
+    border-collapse: collapse;
+    border: 2px solid var(--color-secundario);
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #21262A;
+}
+
+table th {
+    background-color: #21262A;
+    color: var(--letra-clara);
+}
+
+table td {
+    color: var(--letra-oscuro);
+}
+
+.editar-icon,
+.eliminar-icon {
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--color-secundario);
+    gap: 16px;
+}
+
+.editar-icon:hover,
+.eliminar-icon:hover {
+    color: var(--color-primario);
+    /* Color al pasar el mouse por encima de los iconos */
+}
+
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    padding: 16px 0px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    /* Asegura que el footer esté por encima de otros elementos fijos */
+
+}
+
+footer p {
+    font-size: 14;
+    color: #9795B5;
+
+}
+
+/* Estilo de botones redes sociales */
+.container-socialmedia button {
+    background: linear-gradient(to bottom, #FD9601, #F34234);
+    /*Efecto gradiente de colores*/
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 8px 8px;
+}
+
+.container-socialmedia button:hover {
+    /* Efecto en hover */
+    transform: translateY(-3px) scale(1.05);
+    cursor: pointer;
+}
+
+.container-socialmedia svg {
+    /* Tamaño iconos svg */
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 1090px) {
+    .header .Titulo {
+        font-size: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .header .nav-links li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 626px) {
+    .header .botones button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 700;
+        color: black;
+        padding: 8px 24px;
+        margin: 4px;
+        background-color: var(--color-primario);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        transform: scale(0.7);
+    }
+
+    .header .botones button:hover {
+        background-color: pink;
+        transform: scale(0.75);
+    }
+}
+
+/* Estilos para la ventana emergente */
+.ventanaEmergente {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.ventanaEmergente-container {
+    background-color: var(--color-secundario);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.7);
+    text-align: left;
+    color: var(--letra-clara);
+}
+
+.ventanaEmergente h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.ventanaEmergente label {
+    display: block;
+    margin-top: 10px;
+}
+
+.ventanaEmergente input,
+.ventanaEmergente select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.ventanaEmergente-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.ventanaEmergente-buttons button {
+    padding: 8px 24px;
+    background-color: #f34234;
+    color: var(--letra-oscuro);
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.ventanaEmergente-buttons button#cancelar {
+    background-color: #ccc;
+}
