@@ -1,0 +1,136 @@
+/* VENTANA EMERGENTE */
+
+.contenedor__todo{
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ENCABEZADO */
+
+.contenedor__editar-productos{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #000000d4;
+}
+
+#h2-titu{
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+/*------*/
+
+/* FORMULARIO */
+
+.campos{
+    margin-left: 6px;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.texto{
+    width: 200px;
+    margin-left: 50px;
+    border-radius: 16px;
+    text-align: center;
+    padding: 4px;
+    margin-top: 4px;
+}
+
+
+#btn-borrar{
+    background-color: #700b03;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0.2px 0.4px 0.4px hsla(0, 0%, 62%, 0.404); /* Sombra del botón*/
+    cursor: pointer;
+    width: 80px;
+    margin-left: 100px;
+}
+
+.confirmacion{
+    text-align: right;
+    
+}
+
+.btn-cancelar{
+    background-color: #c2c0bd;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50px;
+    padding: 4px;
+    box-shadow: 0.2px 0.4px 0.4px #82828267; /* Sombra del botón*/
+    vertical-align: middle;
+    cursor: pointer;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.btn-guardar{
+    background-color: #F34234;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50px;
+    padding: 4px;
+    box-shadow: 0.2px 0.4px 0.4px hsla(0, 0%, 62%, 0.404); /* Sombra del botón*/
+    vertical-align: middle;
+    cursor: pointer;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+/*------*/
+
+
+/* PAGINACION */
+
+.pagina {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paginacion {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.paginacion li {
+    display: inline;
+    margin: 0 5px;
+    padding-inline-start: 80px;
+}
+
+.paginacion li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #F34234;
+    color: white;
+    border-radius: 50%; 
+    margin: 0 5px;
+}
+
+.paginacion li a:hover {
+    background-color: white;
+    color: #000;
+}
+
+#inactivo{
+    background-color: #dad8d3;
+    color: #000;
+}
+
+label{
+    font-size: smaller;
+    color: #dad8d3;
+}
+
