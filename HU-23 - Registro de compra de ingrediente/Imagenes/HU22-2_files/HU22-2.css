@@ -1,0 +1,134 @@
+/* VENTANA EMERGENTE */
+
+.contenedor__todo{
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Formularios*/
+
+.contenedor__editar-productos{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #000000d4;
+}
+
+#h2-titu{
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+.campos{
+    margin: 100px;
+    margin-inline-end: 120px;
+
+}
+.campos-left{
+    width: 40%;
+    float: left;
+    margin-right: 5px;
+}
+
+.campos-right{
+    width: 40%;
+    float: right;
+    margin-left: 5px;
+}
+
+.contenedor__editar-productos form input{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 6px;
+    margin-bottom: 20px;
+    padding: 10px 4px;
+    border: none;
+    background: #fff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#parraf{
+    height: 100px;
+    background-color: rgb(114, 114, 114);
+    text-align: center;
+    color: white;
+}
+
+#img{
+    height: 100px;
+    background-color: rgb(58, 58, 58);
+    text-align: center;
+}
+
+.btn-cancelar{
+    background-color: #dad8d3;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50px;
+    padding: 4px;
+    box-shadow: 0.2px 0.4px 0.4px #82828267; /* Sombra del botón*/
+    vertical-align: middle;
+    cursor: pointer;
+    width: 80px;
+}
+
+.btn-guardar{
+    background-color: #F34234;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50px;
+    padding: 4px;
+    box-shadow: 0.2px 0.4px 0.4px hsla(0, 0%, 62%, 0.404); /* Sombra del botón*/
+    vertical-align: middle;
+    cursor: pointer;
+    width: 80px;
+}
+
+.btn-superpuestos{
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+/* PAGINACION */
+
+.pagina {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paginacion {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.paginacion li {
+    display: inline;
+    margin: 0 5px;
+    padding-inline-start: 80px;
+}
+
+.paginacion li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #dad8d3;
+    color: #000;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.paginacion li a:hover {
+    background-color: #F34234;
+    color: white;
+}

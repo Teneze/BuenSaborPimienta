@@ -1,0 +1,111 @@
+/* VENTANA EMERGENTE */
+
+.contenedor__todo{
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000d4;
+}
+
+
+/*Formularios*/
+
+.contenedor__editar-productos{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+}
+
+#h2-titu{
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+.campos{
+    margin: 100px;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+.contenedor__editar-productos form input{
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    padding: 10px 4px;
+    border: none;
+    background: #fff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: smaller;
+}
+
+
+
+label{
+    font-size: smaller;
+    color: #dad8d3;
+}
+
+.btn-superpuestos{
+    margin-top: 50px;
+
+}
+
+#cancelar{
+    background-color: #dad8d3;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50px;
+    padding: 4px;
+    box-shadow: 0.2px 0.4px 0.4px hsla(0, 0%, 62%, 0.404); /* Sombra del botón*/
+    vertical-align: middle;
+    cursor: pointer;
+    width: 80px;
+    margin-bottom: 100px;
+    margin-right: 30px;
+
+}
+
+#nuevo{
+    background-color: #b3d242;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50px;
+    padding: 4px;
+    box-shadow: 0.2px 0.4px 0.4px hsla(0, 0%, 62%, 0.404); /* Sombra del botón*/
+    vertical-align: middle;
+    cursor: pointer;
+    width: 80px;
+    margin-bottom: 100px;
+    margin-right: 30px;
+
+}
+
+#enviar{
+    background-color: #F34234;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50px;
+    padding: 4px;
+    box-shadow: 0.2px 0.4px 0.4px hsla(0, 0%, 62%, 0.404); /* Sombra del botón*/
+    vertical-align: middle;
+    cursor: pointer;
+    width: 80px;
+    margin-bottom: 100px;
+}
+
+
+
+
