@@ -1,0 +1,526 @@
+:root {
+    --color-primario: rgba(243, 66, 52, 1);
+    /* Color para los botones y es igual al rojo del logo */
+    --color-secundario: #181E21;
+    --color-terciario: #DAD8D3;
+    --letra-oscuro: rgb(20, 17, 13);
+    --letra-clara: rgb(255, 247, 247);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #21262A;
+}
+
+.header {
+    background-image: url(Fondo\ hamburguesa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    padding: 5px 5%;
+
+}
+
+.header .logo img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.header .logo:hover {
+    transform: scale(1.1);
+
+}
+
+.header .logo {
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--letra-clara);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+header .tipo-empleado {
+    margin-right: 20px;
+    color: var(--letra-clara);
+    font-size: 24px;
+}
+
+header .mi-perfil-button {
+    padding: 0;
+    background-color: var(--color-terciario);
+    border: none;
+    color: var(--letra-oscuro);
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+
+}
+
+header .mi-perfil-button:hover {
+    color: var(--color-primario);
+}
+
+.navegacion-bar {
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion-bar .boton-navegacion {
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    color: var(--letra-clara);
+    cursor: pointer;
+    font-size: 24px;
+    outline: none;
+}
+
+.navegacion-bar .boton-navegacion:hover {
+    color: var(--color-primario);
+}
+
+.opciones {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 5px;
+
+}
+
+.boton-navegacion:hover .opciones {
+    display: flex;
+}
+
+.opciones .opcion {
+    padding: 10px 20px;
+    color: var(--letra-oscuro);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.opciones .opcion:hover {
+    background-color: var(--color-primario);
+    color: var(--letra-clara);
+}
+
+.header .Menu-De-Opciones {
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
+    list-style: none;
+    padding: 0 10px;
+    color: var(--color-terciario);
+}
+
+.header .Menu-De-Opciones li {
+    display: inline-block;
+    position: relative;
+    transition: 0.15s;
+    z-index: 1000;
+
+}
+
+.header .Menu-De-Opciones li:hover {
+    transform: scale(1.05);
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario {
+    display: flex;
+    align-items: center;
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario a {
+    color: var(--color-terciario);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: 0.15s;
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario a:hover {
+    color: pink;
+    transform: scale(1.05);
+}
+
+.header .Menu-De-Opciones .Nombre-Usuario img {
+    width: 40px;
+    height: 40px;
+
+}
+
+.header .Menu-De-Opciones .Hijos {
+    height: auto;
+    border-radius: 24px;
+    padding: 20px 10px;
+}
+
+.header .Menu-De-Opciones .Hijos a {
+    color: var(--letra-oscuro);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 12px 20px;
+    transition: 0.15s;
+    border-radius: 1000px;
+}
+
+.header .Menu-De-Opciones .Hijos a:hover {
+    background-color: pink;
+    transform: scale(0.9);
+}
+
+.header .Menu-De-Opciones li:hover .Hijos {
+    display: block;
+}
+
+.header .Menu-De-Opciones .Submenu .Hijos {
+    display: none;
+    background: var(--color-terciario);
+    position: absolute;
+    width: 100%;
+}
+
+.header .Menu-De-Opciones .Submenu .Hijos li {
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.header .Menu-De-Opciones .Submenu .Hijos li a {
+    display: block;
+}
+
+
+/*main*/
+
+main {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.contenedor-main {
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px;
+    margin: 24px;
+    border-radius: 16px;
+    gap: 8px;
+}
+
+.contenedor-titulo {
+    display: flex;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: var(--letra-clara);
+    border-bottom: 2px solid var(--color-terciario);
+}
+
+/*contenedor para botones*/
+.contenedor-botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+
+.contenedor-filtros {
+    color: var(--letra-clara);
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-botones label {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.contenedor-filtros input,
+.contenedor-filtros select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    background: #cfcfcf;
+    outline: none;
+    border-radius: 5px;
+}
+
+.contenedor-exportar {
+    display: flex;
+    flex-direction: column;
+    color: var(--letra-clara);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.contenedor-exportar button {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.contenedor-exportar img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.contenedor-botones .contenedor-exportar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.chart-wrap {
+    width: 650px;
+    height: 600px;
+    font-family: sans-serif;
+}
+
+.chart-wrap .title {
+    text-align: center;
+}
+
+.grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 2px solid #aaa;
+    background: repeating-linear-gradient(0deg,
+            transparent,
+            transparent 19.5%,
+            rgba(170, 170, 170, 0.3) 20%);
+}
+
+.grid .bar {
+    width: 45px;
+    height: var(--bar-value);
+    align-self: flex-end;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grid .bar.bar:hover {
+    opacity: 0.7;
+}
+
+.grid .bar::after {
+    content: attr(data-name);
+    top: calc(10% - 1em);
+    right: -3em;
+    white-space: nowrap;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.grid.horizontal .bar.red {
+    background-color: var(--color-primario);
+}
+
+
+.grid.horizontal .bar.blue {
+    background-color: #FD9601;
+}
+
+.grid.horizontal {
+    gap: 12px;
+    flex-direction: column;
+    border-bottom: none;
+    border-left: 2px solid #aaa;
+    background: repeating-linear-gradient(90deg,
+            transparent,
+            transparent 19.5%,
+            rgba(170, 170, 170, 0.3) 20%);
+}
+
+.grid.horizontal .bar {
+    height: 16px;
+    width: var(--bar-value);
+    transform: scale(25% 25%);
+    align-self: flex-start;
+    margin: auto 0 auto 0;
+    border-radius: 0 50px 50px 0;
+}
+
+.grid.horizontal .bar::after {
+    top: initial;
+    left: 100%;
+    padding: 0 10px;
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    transform: rotate(0deg);
+    line-height: 20px;
+}
+
+.container {
+    width: max-content;
+    /* Ajusta el ancho del contenedor según tus necesidades */
+    margin: 0 auto;
+}
+
+.customer {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: var(--color-terciario);
+}
+
+.customer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+/*tabla*/
+table {
+    width: 70%;
+    background-color: var(--color-terciario);
+    border-collapse: collapse;
+    border: 2px solid var(--color-secundario);
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #21262A;
+}
+
+table th {
+    background-color: #21262A;
+    color: var(--letra-clara);
+}
+
+table td {
+    color: var(--letra-oscuro);
+}
+
+.button-ver-detalle {
+    background-color: #FD9601;
+    color: var(--letra-oscuro);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    padding: 16px 0px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    /* Asegura que el footer esté por encima de otros elementos fijos */
+
+}
+
+footer p {
+    font-size: 14;
+    color: #9795B5;
+
+}
+
+/* Estilo de botones redes sociales */
+.container-socialmedia button {
+    background: linear-gradient(to bottom, #FD9601, #F34234);
+    /*Efecto gradiente de colores*/
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 8px 8px;
+}
+
+.container-socialmedia button:hover {
+    /* Efecto en hover */
+    transform: translateY(-3px) scale(1.05);
+    cursor: pointer;
+}
+
+.container-socialmedia svg {
+    /* Tamaño iconos svg */
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 1090px) {
+    .header .Titulo {
+        font-size: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .header .nav-links li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 626px) {
+    .header .botones button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 700;
+        color: black;
+        padding: 8px 24px;
+        margin: 4px;
+        background-color: var(--color-primario);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        transform: scale(0.7);
+    }
+
+    .header .botones button:hover {
+        background-color: pink;
+        transform: scale(0.75);
+    }
+}
