@@ -2,7 +2,7 @@
 
 ## Fecha: [18/09/2023]
 
-## Participantes:
+## Integrantes del grupo:
 - [Andrés Novello]
 - [Emilio Amin]
 - [Ezequiel Tenerini]
