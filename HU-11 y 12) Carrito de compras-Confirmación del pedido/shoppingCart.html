@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="icon" href="chile.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style_Register.css"> <!-- pegar el link de github de la hoja de estilo de github-->
+
+</head>
+<body class="pagina2">
+    <header class="header"> <!-- Menu de navegacion, logo, redes sociales -->
+        <div class="logo">
+            <img src="chile.png" alt="Picante">
+            <h2 class="Titulo">El Buen Sabor</h2>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="botones">
+            <a href="#"><button>Iniciar Sesión</button></a>
+            <a href="#"><button>Registrarse</button></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="clase_principal_carrito">
+            
+            <div class="contenedor_producto_carrito">
+                <h2>Carrito de Compras</h2>
+            </div>
+            <div class="linea_divisora">
+                <hr>
+            </div>
+            <div class="ordenador_marcos">
+                
+                    <div class="marco_compra" > <!--   : el id lo puse para clonarlo, si no logro hacer que fncione el js debo borrar-->
+                        
+                        <div class="imagen__producto_carrito">
+                            <img src="Hamburguesa1.jpg" alt="imagen de compra">
+                        </div>
+
+                        <div class="marco_compra_texto">
+                            <h3> Especial de la casa </h3>
+                            <h2>PIMIENTA PASION</h2> 
+                            <h5>La hamburguesa mas picante</h5>
+                            <H6>Ingredientes: carne, lechuga, chedar, tomate, chile picante</H6>
+                        </div>
+
+                        <div class="boton_Carrito_Compras">
+                            <h5>cantidad</h5>
+
+                            <button id="sumar">+</button>
+                            <button id="restar">-</button>
+                        </div>
+
+                        <div class="texto_de_totales">
+                            <h5>Total</h5>
+
+                            <h2>$3000</h2> 
+                        </div>
+
+                    </div>
+                    
+                    <div class="marco_totales_formaPago" >
+                        <div class="totales_1">
+                            <h5> Precio Total del Pedido</h5>
+                            <hr>
+                        </div>
+                        <div class="texto_de_totales">
+                            <h5>Total</h5>
+
+                            <h2>$3000</h2> 
+                        </div>
+                        <div class="linea-divisoria">
+                            <span class="linea"></span>
+                            <span class="circulo">o</span>
+                            <span class="linea"></span>
+                        </div>
+                        <div class="boton_domicilio_local">
+                            <form>
+                                <p >
+                                <label>
+                                  <input type="radio" name="opcion" value="Retiro en tienda"> Retiro en tienda
+                                </label>
+                                </p>
+                                <p>
+                                <label>
+                                  <input type="radio" name="opcion" value="Envio a domicilio"> Envio a domicilio
+                                </label>
+                                </p>
+                              </form>
+                        </div>
+                    </div>
+            </div>        
+        </div>
+    </main>
+
+
+    
+</body>
+</html>

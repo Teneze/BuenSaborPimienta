@@ -1,0 +1,551 @@
+:root{
+    --color-primario: rgba(243, 66, 52, 1); /* Color para los botones y es igual al rojo del logo */
+    --letra-oscuro: rgb(20, 17, 13);
+    --letra-clara: rgb(255, 247, 247);
+    --color-fondo:  rgb(32, 32, 32);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* TOMY agrego .pagina1 para separar lo que va en cada pagina  */
+
+.pagina1 body{
+    background-image: url(Fondo_Hamburguesa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.header {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    padding: 5px 5%;
+    
+}
+
+.header .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--letra-clara);
+    cursor: pointer;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+.header .logo img {
+    width: 70px;
+    height: 70px;
+    
+}
+
+.header .logo:hover{
+    transform: scale(1.1);
+    
+}
+
+.header .nav-links {
+    list-style: none;
+    margin: 4px;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: 0.2s;
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: var(--letra-clara);
+    text-decoration: none;
+
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.header .nav-links a:hover{
+     color: var(--color-primario);  
+}
+
+.header .botones button{
+    font-weight: 700;
+    color: black;
+    padding: 8px 24px;
+    margin: 4px;
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .botones button:hover{
+    background-color: pink;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1090px){
+    .header .Titulo{
+        font-size: 0;
+    }
+}
+
+@media (max-width: 950px){
+        .header .nav-links li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 626px){
+    .header .botones button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 700;
+        color: black;
+        padding: 8px 24px;
+        margin: 4px;
+        background-color: var(--color-primario);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        transform: scale(0.7);
+    }
+
+    .header .botones button:hover{
+        background-color: pink;
+        transform: scale(0.75);
+    }
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 38, 43, 1);
+
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: var(--letra-clara);
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid var(--letra-clara);
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--letra-clara);
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: var(--color-primario);
+    color: var(--letra-oscuro);
+    
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 80px 20px;
+    background: rgb(32, 32, 32);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--letra-clara);
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #cfcfcf;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.contenedor__login-register form input:hover{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    transform: scale(1.05);
+}
+
+.contenedor__login-register .IniciarGoogle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    color: var(--letra-oscuro);
+    transition: all 0.3s;
+}
+
+.contenedor__login-register .IniciarGoogle img {
+    margin-right: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+.contenedor__login-register .IniciarGoogle:hover {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    color: var(--letra-oscuro);
+    transform: scale(1.05);
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: var(--color-primario);
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--letra-oscuro);
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.contenedor__login-register form button:hover{
+    background: var(--color-primario);
+    color: var(--letra-clara);
+    transform: scale(1.1);
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+/* .pagina2 es el de tomy */
+
+.pagina2 {
+    background-color: var(--color-fondo);
+}
+
+
+.contenedor_producto_carrito{
+    
+    color: var(--letra-clara);
+    text-align: center;
+    position: fixed;
+    top: 100px; /* Lo coloca en la parte superior */
+    left: 50%; /* Lo coloca en el centro horizontal */
+    transform: translateX(-50%); /* Centra horizontalmente el elemento */
+    
+}
+.linea_divisora{
+    margin-top: -60px;
+    
+}
+.marco_compra{
+    margin-right: 30px; /* Margen a la derecha de cada div */
+    margin-bottom: 20px; /* Aumenta la distancia entre este y el div inferior */
+    width: 60%;
+    display: flex;
+    justify-content: space-between; /* Distribuir uniformemente los divs */
+    border: 2px solid var(--letra-oscuro); /* Borde sólido de 2 píxeles */
+    border-radius: 10px; /* Radio de 10 píxeles para los bordes redondeados */
+    background-color: #808080 ;
+    padding: 20px   
+}
+
+.boton_Carrito_Compras{
+    
+    #sumar, #restar{
+        background-color: var(--color-primario);
+        border-radius: 10px;
+        border-color: var(--color-fondo);
+    }
+    margin-left: auto;
+    display: flex; /* Utiliza un contenedor flexible */
+    flex-direction: column; /* Acomoda los elementos en columna (uno arriba del otro) */
+    width: 50px; /* Establece un ancho fijo para los botones (ajusta el valor según tus necesidades) */
+}
+.marco_compra_texto h3, .marco_compra_texto h2, .marco_compra_texto h5, .marco_compra_texto H6 {
+    margin-bottom: 10px;
+}
+
+.imagen__producto_carrito,.marco_compra_texto,.boton_Carrito_Compras, .texto_de_totales {
+    flex: none; /* Distribuye el espacio de manera uniforme entre los divs */
+    margin-right: 18px;
+    
+}
+.boton_Carrito_Compras{
+    margin-top: 40px;
+}
+.linea_divisora{
+    margin-bottom: 20px;
+}
+.texto_de_totales{
+    color: var(--letra-clara);
+    background-color: var(--color-fondo);
+    padding: 5px; 
+    border-radius: 10px;
+    width:fit-content;
+}
+
+.linea-divisoria {
+    display: flex;
+    align-items: center;
+}
+
+.imagen__producto_carrito img {
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+}
+.marco_totales_formaPago{
+    
+
+    background-color: #808080 ;
+    margin-bottom: 20px; /* Aumenta la distancia entre este y el div inferior */
+    width: 30%;
+    height: 200px;
+    border: 2px solid var(--letra-oscuro); /* Borde sólido de 2 píxeles */
+    border-radius: 10px; /* Radio de 10 píxeles para los bordes redondeados */
+    padding: 20px
+   
+
+}
+
+
+/* Separador ---------o----------- */
+.linea, .circulo {
+    border-top: 2px solid var(--color-primario); /* Grosor y color de la línea */
+    flex: 1;
+    height: 1px; /* Altura de la línea */
+    margin: 0 5px; /* Espacio entre la línea y el círculo */
+}
+
+.circulo {
+    color: var(--color-primario); /* Color del texto en el círculo */
+    font-weight: bold; /* Texto en negrita para que se destaque */
+    width: 20px; /* Ancho del círculo */
+    height: 20px; /* Altura del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* FIN Separador ---------o--------- */
+
+.texto_de_totales, .linea-divisoria, .boton_domicilio_local{
+    margin-bottom: 15px; /* Espacio entre los divs */
+
+}
+.totales_1{
+    margin-bottom: 10px;
+}
+.ordenador_marcos{
+    display: flex; /* Usar flexbox para colocar div2 y div3 en línea */
+}
+
+/* inicio HU-13 parte UNO Pago en efectivo*/
+/* inicio HU-13 parte UNO Pago en efectivo*/
+
+.marco_principal_EFECTIVO{
+    
+    background-color: #808080;
+    width: 60%;
+    height: 300px;
+    border-radius: 10px; /* Radio de 10 píxeles para los bordes redondeados */
+    padding: 20px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.opciones{
+    background-color: #e6e6e6; /* Cambia este color al que desees */
+     border: 1px solid var(--color-primario); /* Añade un borde para resaltar la barra */
+     padding: 5px; /* Espaciado interno */
+     margin-left: 300px;
+     border-radius: 25px; /* Redondea los bordes */
+
+}
+
+.boton-confirmar-cancelar{
+    background-color: var(--color-primario); /* Color de fondo */
+    color: var(--letra-clara); /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 25px; /* Redondea los bordes */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+.letras1{
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos dentro de .letras.Z */
+
+}
+.h3_precioTotal{
+    display: inline-block; /* Coloca el h3 en línea con .texto_de_totales */
+}
+.texto_de_totales{
+    margin-left: 50%;
+    display: inline-block; /* Coloca .texto_de_totales en línea con el h3 */
+
+}
+.letras1, .letras2{
+    padding: 2px; /* Espaciado interno para separar los divs */
+
+}
+.letras,.Barra_op_depto,.botones_CC{
+    padding: 10px; /* Espaciado interno para separar los divs */
+}
+
+
+
+
+
+
+
+
+/* inicio HU-13 parte DOS envio a domicilio*/
+/* inicio HU-13 parte DOS envio a domicilio*/
+
+.letras_EFECTIVO h3{
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* fin codigo  tomy */
+/* fin codigo  tomy */
